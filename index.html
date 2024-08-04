@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formcontent">
+            <!-- Login Form -->
+            <form class="loginform active">
+                <div class="title">Login</div>
+                <div class="inputboxes">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>
+                <button type="submit" class="submitbutton">Submit</button>
+                <div class="forgot-password">
+                    <a href="#" onclick="showForgotPassword()">Forgot Password?</a>
+                </div>
+                <div class="text">
+                    <a href="#" onclick="toggleForms(event)">Don't have an account? Sign up</a>
+                </div>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="signupform">
+                <div class="title">Sign Up</div>
+                <div class="inputboxes">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" placeholder="Email">
+                    </div>
+                </div>
+                <button type="submit" class="submitbutton">Submit</button>
+                <div class="text">
+                    <a href="#" onclick="toggleForms(event)">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-container">
+          
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
